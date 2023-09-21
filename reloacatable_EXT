@@ -1,0 +1,11 @@
+; Relative Program
+relPrg   .ORIG   
+         .EXT    reg1	
+count    .EQU    reg1
+Begin    ADD     count,count,count
+         AND     R1,R2,x1F
+Beans1   LD      R0,=x37 ;literal relocatable??
+Maiden   .FILL   Beans1 ;16 bit M record
+         BRN     Maiden ;just a regular old jump
+         .STRZ   "donezo!"
+         .END    Begin

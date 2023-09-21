@@ -1,0 +1,11 @@
+;Literal world baby
+HIII     .ORIG   x2
+reg0     .EQU    #0
+reg01    .EQU    reg0
+reg1     .EQU    #1
+reg11    .EQU    reg1
+Begin    LD      reg0,=#1
+         LD      reg01,=#2      
+         LD      reg1,=#3      
+         LD      reg11,=#4      
+         .END    Begin
